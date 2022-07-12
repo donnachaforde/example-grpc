@@ -1,0 +1,33 @@
+// Hello World! gRPC example
+//
+// This is a custom implementation of the official gRPC getting started example. 
+//
+//
+
+
+syntax = "proto3";
+
+//option java_multiple_files = true;
+//option java_package = "io.grpc.examples.helloworld";
+//option java_outer_classname = "helloworldproto";
+//option objc_class_prefix = "hlw";
+
+package helloworld;
+
+// service definition
+service Greeter 
+{
+	rpc execute (HelloRequest) returns (HelloResponse) {}
+}
+
+// input request
+message HelloRequest 
+{
+	string name = 1;
+}
+
+// output response
+message HelloResponse 
+{
+	string message = 1;
+}
