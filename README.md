@@ -8,9 +8,15 @@ A minimalist gRPC/C++ example on Windows, based off of the [official gRPC exampl
 
 ## Build Instructions
 
+### Install gRPC for C++
+
+Currently, there is no installer for gRPC on Windows for C++ and you are required to build from source. Take a read of their [build instructions on GitHub](https://github.com/grpc/grpc/blob/master/BUILDING.md). It's also worth reading the [Quick Start Guide](https://grpc.io/docs/languages/cpp/quickstart/) on the official https://grpc.io website, though IMHO the guide is primarily aimed at macOS & Linux users. 
+
+I'd advise you to study these guides as the build for Windows is not so straightforward. There is support for `vcpkg` though I opted to build from scratch. I had to fiddle around with the release and debug installs to get the full complement of libs needed to cleanly build for both configurations. 
+
 ### Prepare your build environment
 
-* Ensure you have declared a `GRPC_HOME` environment variable pointing at the location of your gRPC install. 
+* Ensure you have declared a `%GRPC_HOME%` environment variable pointing at the location of your gRPC install. 
     * The stub code generation uses this env-var to find the `protoc` code generator.
     * Both the client and server projects reference the gRPC headers and libs needed to build the project from this path.
 
