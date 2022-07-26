@@ -13,7 +13,6 @@
 #include <string>
 
 // grpc
-//#pragma warning( disable : 4251 ) // Ignore dll-interface warnings
 #include <grpcpp/grpcpp.h>
 #include <grpcpp/ext/proto_server_reflection_plugin.h>
 

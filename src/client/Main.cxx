@@ -14,7 +14,6 @@
 
 
 // grpc
-#pragma warning( disable : 4251 ) // Ignore dll-interface warnings
 #include <grpcpp/grpcpp.h>
 
 // generated stubs
