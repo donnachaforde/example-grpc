@@ -1,6 +1,10 @@
 # README - example-grpc
 
-A minimalist gRPC/C++ example on Windows, based off of the [official gRPC examples](https://github.com/grpc/grpc/tree/master/examples/cpp/helloworld).
+A minimalist gRPC/C++ example on Windows, based off of the [official gRPC examples](https://github.com/grpc/grpc/tree/master/examples)
+
+## Motivation
+This is a _bare-bones_ implementation of the basic client/server "Hello World!" C++ example, which is published in the [gRPC C++ examples](https://github.com/grpc/grpc/tree/master/examples/cpp/helloworld) section on GitHub. It's a minimalist version, stripped down to its most basic constructs with minor changes to naming conventions .It also cleanly compiles in both `Debug` and `Release` configurations in the Visual Studio IDE. 
+
 
 ## Requirements
 * gRPC for Windows
