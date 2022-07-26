@@ -11,6 +11,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "protoslib", "protoslib\protoslib.vcxproj", "{3FD49655-3D10-4DE7-B745-A3EB0193F454}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "server\server.vcxproj", "{21030404-588B-41F0-9587-5095F06514BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3FD49655-3D10-4DE7-B745-A3EB0193F454} = {3FD49655-3D10-4DE7-B745-A3EB0193F454}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
