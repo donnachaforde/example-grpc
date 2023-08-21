@@ -27,7 +27,7 @@ using grpc::Status;
 
 
 
-int main(int argc, char* argv[], char* env[])
+int main(int argc, char* argv[], char* envp[])
 {
 	// initialize a connection
 	std::string strTargetEndpoint = "localhost:500052";

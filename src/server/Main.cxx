@@ -48,7 +48,7 @@ class GreeterServiceImpl final : public Greeter::Service
 
 
 
-int main(int argc, char* argv[], char* env[])
+int main(int argc, char* argv[], char* envp[])
 {
     cout << "Initializing gRPC server..." << endl; 
 
